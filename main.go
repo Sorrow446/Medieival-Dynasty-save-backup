@@ -45,10 +45,8 @@ func gameRunning() (bool, error) {
 
 func genZipFname() string {
 	timestamp := time.Now().Format("Mon Jan 2 3:04PM 2006")
-	finalTimestamp := strings.Replace(timestamp, " ", "_", -1)
-	filename := "md_save_backup_(" + finalTimestamp + ").zip"
-	filename = r.Replace(filename)
-	return filename
+	filename := "md_saves_backup_(" + timestamp + ").zip"
+	return r.Replace(filename)
 }
 
 func makeZip(filePaths []string, outPath string) error {
