@@ -23,7 +23,7 @@ func gameRunning() (bool, error) {
 	const procName = "Medieval_Dynasty-Win64-Shipping.exe"
 	h, err := windows.CreateToolhelp32Snapshot(windows.TH32CS_SNAPPROCESS, 0)
 	if err != nil {
-		panic(err)
+		return false, err
 	}
 	proc := windows.ProcessEntry32{Size: 568}
 	for {
