@@ -133,10 +133,7 @@ func parseConfig() (*Config, error) {
 
 func makeDir(path string) error {
 	err := os.MkdirAll(path, 0755)
-	if err != nil {
-		return err
-	}
-	return nil
+	return err
 }
 
 func getScriptDir() (string, error) {
