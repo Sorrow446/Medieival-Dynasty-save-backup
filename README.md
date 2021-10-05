@@ -1,5 +1,5 @@
 # Medieival-Dynasty-save-backup
-Medieival Dynasty save backuper written in Go.
+Medieival Dynasty save backupper written in Go.
 ![](https://i.imgur.com/Cq2RdEr.png)
 [Windows binaries](https://github.com/Sorrow446/Medieival-Dynasty-save-backup/releases)
 
